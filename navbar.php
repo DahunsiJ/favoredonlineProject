@@ -31,7 +31,13 @@
 
         .sidebar a:hover {
             color: #f1f1f1;
+            background-color: #2F4F4F;
         }
+
+        .sidebar a.active {
+            background-color: #B0C4DE;
+            color: white;
+}
 
         .sidebar .closebtn {
             position: absolute;
@@ -65,10 +71,15 @@
         @media screen and (max-height: 450px) {
             .sidebar {
                 padding-top: 15px;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 60px;
             }
 
             .sidebar a{
                 font-size: 18px;
+                display: block;
             }
 
         }
@@ -76,7 +87,8 @@
 </head>
 
 <body>
-    <div id="mySidebar" class="sidebar">
+    <div class="contain">
+        <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
         <a href="https://favoredonline.com" class="active"><img
@@ -101,12 +113,9 @@
         document.getElementById("main").style.marginRight= "0";
         }
         </script>
-        <div class="header">
-        <a href="https://favoredonline.com/index.php"
-        class="logo">FavoredOnline</a>
-        <div class="header-right">
-        </div>
-        </div>
+      
+    </div>
+    
 
 </body>
 </html>
